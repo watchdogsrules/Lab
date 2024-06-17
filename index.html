@@ -18,7 +18,14 @@
            background-color: pink;
        }
 
-            
+
+
+       .oddi 
+       {
+           background-color: blue;
+       }
+
+       
        #subtitle
        {
           background-color: pink;
@@ -74,15 +81,17 @@
   </p>
 
 
-    <input type="button" value="DO NOT CLICK THIS BUTTON" onclick="alert('Why'd you click on me?');">
+    <input type="button" value="DO NOT CLICK THIS BUTTON" onclick="myExample()">
 
   <script>
       
        alert("you're pretty good");
 
-
-    var subtitle = document.getElementById("subtitle");
-    
+         function myExample ()
+           {
+                var subtitle = document.getElementById("subtitle");
+                subtitle.setAttribute("class", "oddi");
+           }
   </script
 
 
